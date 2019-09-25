@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <base href="/game/">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="referrer" content="no-referrer" />
+    <title>Unity WebGL Player | WebGLTest</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="/game/webgl/prd_r18/UnityLoader.js?v=ver.1.0.1"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="app_unity.js?v=ver.1.0.1"></script>
+    <link rel="stylesheet" type="text/css" href="app.css" media="all">
+    <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "/game/webgl/prd_r18/Webgl.json?v=ver.1.0.1", {onProgress: UnityProgress});
+    //Redirect
+    let orgOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function()
+    {
+      arguments[1] = arguments[1].replace('http://c0bejdcaemmvlu.cdn.jp.idcfcloud.com/', 'https://thisisbinh.me/worker/proxy/http%3A%2F%2Fc0bejdcaemmvlu.cdn.jp.idcfcloud.com/');
+      arguments[1] = arguments[1].replace('http://taimanin-rpg.com/', location.origin + '/Api/');
+      return orgOpen.apply(this, arguments);
+    };
+    </script>
+  </head>
+  <body style="margin: 10px;">
+    <div class="webgl-frame" style="width: 1322px;"></div>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1280px; height: 720px; margin: auto;"></div>
+      <div class="footer" style="display: none;">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title"></div>
+      </div>
+    </div>
+    <pre id="debug-timer" style="position: absolute; width: 100px; height: 100px; color: red; display: none;>"></pre>
+    <div id="input-text-popup-base" class="input-text-popup-base">
+      <div id="input-text-popup" class="active">
+        <div id="popup-title-base" class="popup-title-base"></div>
+        <div id="popup-close-btn" class="popup-close-btn"></div>
+        <div id="popup-detail" class="popup-detail"></div>
+        <div id="popup-input-text-bg" class="popup-input-text-bg"></div>
+        <textarea id="popup-input-text" class="popup-input-text" wrap="soft"></textarea>
+        <div id="popup-text-count" class="popup-text-count"></div>
+        <div id="popup-text-clear" class="popup-text-clear"></div>
+        <div id="popup-attention" class="popup-attention"></div>
+        <div id="popup-btn-area" class="popup-btn-area">
+          <div id="popup-cancel-btn" class="popup-cancel-btn"></div>
+          <div id="popup-ok-btn" class="popup-ok-btn"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

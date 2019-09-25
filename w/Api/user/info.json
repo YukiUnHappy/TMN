@@ -1,0 +1,38 @@
+{
+  "userInfo": {
+    "userId": 12450,
+    "userName": "讚美太陽",
+    "rank": 1,
+    "exp": 0,
+    "bp": 6,
+    "ap": 32,
+    "gold": 450,
+    "friendNum": 0,
+    "friendPt": 40,
+    "pileupLoginDays": 1,
+    "serialLoginDays": 1,
+    "loginAt": "2018-09-25 12:00:00",
+    "apMax": 32,
+    "apRestTime": -20,
+    "apIntervalTime": 180,
+    "bpMax": 6,
+    "bpRestTime": -20,
+    "bpIntervalTime": 600,
+    "friendLimit": 5,
+    "nextRankExp": 320,
+    "favoriteUnitInfo": {
+      "rootUnitId": "uni00012_1"
+    },
+    "supportUnitInfo": {
+      "userUnitId": 444
+    },
+    "loginElapsed": 2,
+    "jewel": {
+      "free": 520,
+      "payment": 0
+    },
+    "friendRequestedCount": 0,
+    "nextApRecoverySecond": 0,
+    "nextBpRecoverySecond": 0
+  }
+}

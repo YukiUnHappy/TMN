@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>対魔忍RPGX</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" type="image/jpeg" href="400x400.jpg" />
+  <style>body,td,div,span,p{font-family:arial,sans-serif;} a {color:#0000cc;}a:visited {color:#551a8b;}a:active {color:#ff0000;}body{margin: 0px;padding: 0px;background-color:white;}</style>
+</head>
+
+<body>
+
+  <iframe id="game_window" class="iframe.contents-box" frameborder="no" width="100%" height="790" scrolling="no"></iframe>
+
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload());
+      navigator.serviceWorker.register('sw.js')
+        .then((registration) => {
+          console.log(`Service Worker registration complete, scope: '${registration.scope}'`);
+          if (registration.active)
+            document.getElementById('game_window').src="/game/index.html";
+          else
+            location.reload();
+        })
+        .catch((error) =>
+          console.log(`Service Worker registration failed with error: '${error}'`));
+    }
+    else alert("Please use modern browser and update to the latest version");
+  </script>
+
+</body>
+
+</html>

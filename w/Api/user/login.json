@@ -1,0 +1,16 @@
+{
+  "temporaryToken": "7694f4a66316e53c8cdd9d9954bd611d",
+  "user": {
+    "userId": 12450,
+    "initSeq": 30000,
+    "r18Flg": 1,
+    "userType": 0,
+    "accountType": 2,
+    "token": null,
+    "shiftMin": 0,
+    "oldAsagiStatus": 2,
+    "oldAsagiResult": null,
+    "createdAt": "2018-09-25 12:00:00",
+    "updatedAt": "2018-09-25 12:00:00"
+  }
+}

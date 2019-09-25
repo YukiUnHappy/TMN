@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>データ更新</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" style="display: none;">
+        <!-- Default form contact -->
+        <form id="data" class="text-center border border-light p-4 my-2 mt-md-5 col-md-8 offset-md-2" action="#">
+
+            <p class="h4 mb-4">データ更新</p>
+
+            <!-- Subject -->
+            <label>AlubumList</label>
+
+            <!-- Message -->
+            <div class="form-group">
+                <textarea class="form-control rounded-0 amber-border" name="text" rows="20"
+                    placeholder="{&quot;crypted_body&quot;:&quot;hA4E8vQ92ijTI7mqiMwVIPbdsDjQb44UNGH...R4B4iuyhyNnkF3SwbKPad6GiQezu1ULBlbajL/pCJS+6NKwKK0Q=&quot;}"></textarea>
+            </div>
+
+            <!-- Send button -->
+            <button class="btn btn-outline-info" type="submit">サブミット</button>
+
+        </form>
+        <!-- Default form contact -->
+    </div>
+
+    <script type="text/javascript">
+        $('form#data').submit((evt) => {
+            evt.preventDefault();
+            $.post("/update", $('textarea').val(), (data, status) => {
+                if (status == "success") alert("更新完了");
+                else alert("通信エラーが発生しました");
+            }).fail(() => alert("通信エラーが発生しました"));
+        })
+    </script>
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload());
+            navigator.serviceWorker.register('sw.js')
+                .then((registration) => {
+                    console.log(`Service Worker registration complete, scope: '${registration.scope}'`);
+                    if (registration.active)
+                        $('.container-fluid').show();
+                    else
+                        location.reload();
+                })
+                .catch((error) =>
+                    console.log(`Service Worker registration failed with error: '${error}'`));
+        } else alert("Please use modern browser and update to the latest version");
+    </script>
+</body>
+
+</html>

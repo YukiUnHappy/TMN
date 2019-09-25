@@ -1,0 +1,12 @@
+{
+  "helpInstantList": [
+    {
+      "helpInstantId": 42,
+      "helpCategory": 100,
+      "title": "回想シーンについて",
+      "detail": null,
+      "graphicId": "instant_help_100_1",
+      "r18Type": 2
+    }
+  ]
+}

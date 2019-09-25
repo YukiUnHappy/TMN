@@ -1,0 +1,208 @@
+input, select, textarea {
+    font-family : inherit;
+}
+
+/* 下敷き */
+.input-text-popup-base {
+    width: 960px;
+    height: 720px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display:none;
+    background: rgba(0,0,0, 0.8);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.active {
+    animation-duration: 0.1s;
+    animation-name: active-animation;
+    animation-fill-mode: forwards;
+}
+
+.inactive {
+    animation-duration: 0.1s;
+    animation-name: inactive-animation;
+    animation-fill-mode: forwards;
+}
+
+@keyframes active-animation {
+    0% {
+        transform: scale(2.0, 0);
+    }
+    100% {
+        transform: scale(1.0, 1.0);
+    }
+}
+
+@keyframes inactive-animation {
+    0% {
+        transform: scale(1.0, 1.0);
+    }
+    100% {
+        transform: scale(2.0, 0);
+    }
+}
+
+/* プロフィール用 */
+.profile-input-text-popup {
+    width: 760px;
+    height: 486px;
+    position: absolute;
+    top: 115px;
+    left: 110px;
+    background-image: url(./image/Cmn_poppup_frm_m.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.profile-input-text-popup .popup-title-base {
+    width: 470px;
+    height: 80px;
+    position: absolute;
+    top: -14px;
+    left: -20px;
+    background-image: url(./image/Cmn_poppup_title_base.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 26px;
+    padding-left: 34px;
+}
+
+.profile-input-text-popup .popup-title-base:before {
+    content: "コメント編集";
+}
+
+.profile-input-text-popup .popup-close-btn {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    top: -27px;
+    left: 680px;
+    background-image: url(./image/Cmn_close_btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.profile-input-text-popup .popup-detail {
+    width: 771px;
+    height: 80px;
+    position: absolute;
+    top: 92px;
+    left: 0px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff, -2px -2px 1px #fff;
+}
+
+.profile-input-text-popup .popup-detail:before {
+    content: "コメントを入力してください。";
+}
+
+.profile-input-text-popup .popup-text-count {
+    width: 105px;
+    height: 34px;
+    position: absolute;
+    padding-top: 20px;
+    padding-right: 26px;
+    top: 116px;
+    left: 528px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    background-image: url(./image/Cmn_frm04_count_base.png);
+    background-position: 22px 12px;
+    background-repeat: no-repeat;
+}
+
+.profile-input-text-popup .popup-text-clear {
+    width: 57px;
+    height: 60px;
+    position: absolute;
+    overflow: hidden;
+    top: 189px;
+    left: 635px;
+    background-image: url(./image/Cmn_btn_delete.png);
+}
+
+.profile-input-text-popup .popup-input-text-bg {
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: 148px;
+    left: 129px;
+    background-image: url(./image/css_frm04.png);
+}
+
+.profile-input-text-popup .popup-input-text {
+    width: 410px;
+    height: 45px;
+    position: absolute;
+    overflow: hidden;
+    top: 180px;
+    left: 175px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 120%;
+    background-color: transparent;
+    border-style: none;
+    resize: none;
+    outline: none;
+}
+
+.profile-input-text-popup .popup-attention {
+    width: 624px;
+    height: 74px;
+    position: absolute;
+    top: 264px;
+    left: 26px;
+    padding-top: 9px;
+    padding-left: 75px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    background-image: url("./image/css_attention_frm1_2.png");
+    text-shadow: 2px 2px 1px #d05300, -2px 2px 1px #d05300, 2px -2px 1px #d05300, -2px -2px 1px #d05300;
+}
+
+.profile-input-text-popup .popup-attention:before {
+    content: "・絵文字を使用することはできません。\A・本名やメールアドレス、電話番号などの個人を特定できる情報の入力は\A　お控えください。";
+    white-space: pre;
+}
+
+.profile-input-text-popup .popup-btn-area {
+    width: 650px;
+    height: 60px;
+    position: absolute;
+    top: 360px;
+    left: 59px;
+    text-align: center;
+}
+
+.profile-input-text-popup .popup-btn-area .popup-ok-btn {
+    width: 232px;
+    height: 80px;
+    margin-left: 12px;
+    margin-right: 20px;
+    display: inline-block;
+    background-image: url("./image/css_btn_l1_confirm.png");
+}
+
+.profile-input-text-popup .popup-btn-area .popup-cancel-btn {
+    width: 232px;
+    height: 80px;
+    margin-left: 12px;
+    margin-right: 20px;
+    display: inline-block;
+    background-image: url("./image/css_btn_l1_cancel.png");
+}

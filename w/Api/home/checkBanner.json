@@ -1,0 +1,140 @@
+{
+  "homeInfo": {
+    "panelMissionType": 1,
+    "panelNotRewardedCount": 0,
+    "bannerList": [
+      {
+        "eventMiniId": 1,
+        "title": "ユニット経験値UP!!",
+        "bannerId": "bnr_ev_mini_00001",
+        "logoId": "eve_mini_logo1_00001",
+        "sectionId": 1,
+        "difficultyType": 1,
+        "regulationPeriod": 0,
+        "regulationRank": 0,
+        "regulationCount": 0,
+        "periodStart": "2018-11-03 00:00:00",
+        "periodEnd": "2018-11-04 23:59:59",
+        "playEnabled": 1,
+        "displayEnabled": 1,
+        "bannerType": 1,
+        "periodStartDisplay": "11/3",
+        "periodEndDisplay": "11/4 23:59",
+        "periodDisplay": "11/3～11/4 23:59まで",
+        "eventId": 1,
+        "type": "event",
+        "transitionTag": "EventMini"
+      },
+      {
+        "eventMiniId": 2,
+        "title": "信頼度UP!!",
+        "bannerId": "bnr_ev_mini_00002",
+        "logoId": "eve_mini_logo1_00002",
+        "sectionId": 2,
+        "difficultyType": 1,
+        "regulationPeriod": 0,
+        "regulationRank": 0,
+        "regulationCount": 0,
+        "periodStart": "2018-11-03 00:00:00",
+        "periodEnd": "2018-11-04 23:59:59",
+        "playEnabled": 1,
+        "displayEnabled": 1,
+        "bannerType": 1,
+        "periodStartDisplay": "11/3",
+        "periodEndDisplay": "11/4 23:59",
+        "periodDisplay": "11/3～11/4 23:59まで",
+        "eventId": 2,
+        "type": "event",
+        "transitionTag": "EventMini"
+      },
+      {
+        "bannerId": "bnr_ev_story_00002_1",
+        "type": "event",
+        "transitionTag": "EventStory",
+        "r18Flg": 0,
+        "periodStart": "2018-11-02 17:00:00",
+        "periodEnd": "2018-11-16 09:59:59",
+        "periodStartDisplay": "11/2",
+        "periodEndDisplay": "11/16 09:59",
+        "periodDisplay": "11/2～11/16 9:59まで",
+        "eventStoryId": 2,
+        "eventId": 2,
+        "questOrder": 1,
+        "homeOrder": 1
+      },
+      {
+        "bannerId": "bnr_shop_00001",
+        "transitionTag": "shop"
+      },
+      {
+        "bannerId": "bnr_shop_00002",
+        "transitionTag": "shop"
+      },
+      {
+        "bannerId": "bnr_gacha_01003",
+        "type": "gacha_limited",
+        "transitionTag": "gacha_top",
+        "r18Flg": 0,
+        "periodStart": "2018-11-02 17:00:00",
+        "periodEnd": "2018-11-16 09:59:59"
+      },
+      {
+        "bannerId": "bnr_gacha_00001",
+        "type": "gacha",
+        "transitionTag": "gacha_top",
+        "r18Flg": 0,
+        "periodStart": "2017-08-01 10:00:00",
+        "periodEnd": "2020-08-01 10:00:00"
+      },
+      {
+        "bannerId": "bnr_campaign_00001",
+        "type": "campaign",
+        "transitionTag": "present_code",
+        "r18Flg": 0,
+        "periodStart": "2018-08-01 10:00:00",
+        "periodEnd": "2030-10-01 10:00:00"
+      },
+      {
+        "bannerId": "bnr_campaign_00003",
+        "type": "campaign",
+        "transitionTag": "present_code",
+        "r18Flg": 0,
+        "periodStart": "2018-10-26 10:00:00",
+        "periodEnd": "2030-10-01 10:00:00"
+      },
+      {
+        "bannerId": "bnr_common_00001",
+        "type": "common",
+        "transitionTag": "panel_mission",
+        "r18Flg": 0,
+        "periodStart": "2017-08-01 10:00:00",
+        "periodEnd": "2020-08-01 10:00:00",
+        "panelMissionType": 1
+      },
+      {
+        "bannerId": "bnr_common_00003",
+        "type": "common",
+        "transitionTag": "info",
+        "r18Flg": 0,
+        "periodStart": "2017-08-01 10:00:00",
+        "periodEnd": "2020-08-01 10:00:00",
+        "infoId": 6
+      },
+      {
+        "bannerId": "bnr_ev_raid_00001_2",
+        "type": "event",
+        "transitionTag": "EventRaid",
+        "r18Flg": 0,
+        "periodStart": "2018-11-02 17:00:00",
+        "periodEnd": "2018-11-16 09:59:59",
+        "periodStartDisplay": "11/2",
+        "periodEndDisplay": "11/16 9:59",
+        "periodDisplay": "11/16(金) 9:59まで",
+        "eventRaidId": 1,
+        "eventId": 1,
+        "questOrder": 9999,
+        "homeOrder": 2
+      }
+    ]
+  }
+}
