@@ -37,8 +37,8 @@
 
             <!-- Message -->
             <div class="form-group">
-                <textarea class="form-control rounded-0 amber-border" name="text" rows="20"
-                    placeholder="{&quot;crypted_body&quot;:&quot;hA4E8vQ92ijTI7mqiMwVIPbdsDjQb44UNGH...R4B4iuyhyNnkF3SwbKPad6GiQezu1ULBlbajL/pCJS+6NKwKK0Q=&quot;}"></textarea>
+                <textarea class="form-control rounded-0" name="text" rows="20"
+                    placeholder="{&quot;crypted_body&quot;:&quot;hA4E8vQ92ijTI7mqiMwVIPbdsDjQb44UNGH......R4B4iuyhyNnkF3SwbKPad6GiQezu1ULBlbajL/pCJS+6NKwKK0Q=&quot;}"></textarea>
             </div>
 
             <!-- Send button -->
@@ -53,7 +53,7 @@
             evt.preventDefault();
             $.post("/update", $('textarea').val(), (data, status) => {
                 if (status == "success") alert("更新完了");
-                else alert("通信エラーが発生しました");
+                else alert("不明エラーが発生しました");
             }).fail(() => alert("通信エラーが発生しました"));
         })
     </script>
