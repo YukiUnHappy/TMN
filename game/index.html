@@ -22,6 +22,18 @@
       arguments[1] = arguments[1].replace('http://taimanin-rpg.com/', location.origin + '/Api/');
       return orgOpen.apply(this, arguments);
     };
+    let orgcreateElement = document.createElement;
+    document.createElement = function(){
+      var s = orgcreateElement.apply(this, arguments);
+      if (arguments[0] != 'audio' && arguments[0] != 'video')
+        return s;
+      Object.defineProperty(s, 'src', {
+        set: function(url) {
+          s.setAttribute('src', url.replace('http://c0bejdcaemmvlu.cdn.jp.idcfcloud.com/', 'http://dvmj9pznh0.user-space.cdn.idcfcloud.net/'));
+        }
+      });
+      return s;
+    }
     </script>
   </head>
   <body style="margin: 10px;">
