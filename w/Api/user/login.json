@@ -3,6 +3,7 @@
   "user": {
     "userId": 12450,
     "initSeq": 30000,
+    "tutorialClearedAt": "2018-09-25 12:00:00",
     "r18Flg": 1,
     "userType": 0,
     "accountType": 2,
@@ -10,7 +11,11 @@
     "shiftMin": 0,
     "oldAsagiStatus": 2,
     "oldAsagiResult": null,
+    "oldAsagiServiceEndStatus": 2,
+    "campaignRewardStatus": 126,
     "createdAt": "2018-09-25 12:00:00",
-    "updatedAt": "2018-09-25 12:00:00"
-  }
+    "updatedAt": "2018-09-25 12:00:00",
+    "userWarningCode": 0
+  },
+  "optionData": null
 }

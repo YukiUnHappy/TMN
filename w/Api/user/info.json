@@ -12,6 +12,10 @@
     "pileupLoginDays": 1,
     "serialLoginDays": 1,
     "loginAt": "2018-09-25 12:00:00",
+    "comebackLoginCount": 5,
+    "rankReadjust": 2,
+    "expReadjust": 180,
+    "missionCheckedAt": "2020-02-22 22:22:22",
     "apMax": 32,
     "apRestTime": -20,
     "apIntervalTime": 180,
@@ -33,6 +37,7 @@
     },
     "friendRequestedCount": 0,
     "nextApRecoverySecond": 0,
-    "nextBpRecoverySecond": 0
+    "nextBpRecoverySecond": 0,
+    "gameCampaignList": []
   }
 }

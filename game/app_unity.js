@@ -162,11 +162,23 @@ function receiveMessage(event) {
 
 const INPUT_TEXT_TYPE_PROFILE = 1; // プロフィールコメント用
 const INPUT_TEXT_TYPE_SEARCH = 1; // ID検索用
+const INPUT_TEXT_TYPE_RUNE_MYSET = 2; // 装備マイセット名用
+const INPUT_TEXT_TYPE_DECK_NAME = 3; // デッキ名用
 
 function showInputText(co, ok, cancel, defaultText, maxlength, type) {
+    $("#input-text-popup").removeClass("profile-input-text-popup");
+    $("#input-text-popup").removeClass("rune-myset-input-text-popup");
+    $("#input-text-popup").removeClass("deck-name-input-text-popup");
     switch (type) {
         case INPUT_TEXT_TYPE_PROFILE:
             $("#input-text-popup").addClass("profile-input-text-popup");
+            break;
+        case INPUT_TEXT_TYPE_RUNE_MYSET:
+            $("#input-text-popup").addClass("rune-myset-input-text-popup");
+            break;
+        case INPUT_TEXT_TYPE_DECK_NAME:
+            $("#input-text-popup").addClass("deck-name-input-text-popup");
+            break;
     }
     
     // 表示
@@ -279,7 +291,7 @@ $(function(){
         if (new_text != text) {
             $textarea.val(new_text);
         }
-        updateTextCount(40);
+        updateTextCount($("#popup-input-text").attr("maxlength"));
     });
 });
 
