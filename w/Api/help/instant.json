@@ -1,12 +1,56 @@
 {
-  "helpInstantList": [
-    {
-      "helpInstantId": 42,
-      "helpCategory": 100,
-      "title": "回想シーンについて",
-      "detail": null,
-      "graphicId": "instant_help_100_1",
-      "r18Type": 2
-    }
-  ]
+  "helpInstantList": {
+    "100": [
+      {
+        "helpInstantId": 100001,
+        "helpCategory": 100,
+        "title": "回想シーンについて",
+        "detail": null,
+        "graphicId": "instant_help_100_1",
+        "r18Type": 2
+      },
+      {
+        "helpInstantId": 100002,
+        "helpCategory": 100,
+        "title": "回想シーンについて",
+        "detail": null,
+        "graphicId": "instant_help_100_2",
+        "r18Type": 2
+      }
+    ],
+    "110": [
+      {
+        "helpInstantId": 110001,
+        "helpCategory": 110,
+        "title": "図書館とは？",
+        "detail": null,
+        "graphicId": "instant_help_110_1",
+        "r18Type": 0
+      },
+      {
+        "helpInstantId": 110002,
+        "helpCategory": 110,
+        "title": "図書館とは？",
+        "detail": null,
+        "graphicId": "instant_help_110_2",
+        "r18Type": 0
+      },
+      {
+        "helpInstantId": 110003,
+        "helpCategory": 110,
+        "title": "図書館とは？",
+        "detail": null,
+        "graphicId": "instant_help_110_3",
+        "r18Type": 0
+      },
+      {
+        "helpInstantId": 110004,
+        "helpCategory": 110,
+        "title": "図書館とは？",
+        "detail": null,
+        "graphicId": "instant_help_110_4",
+        "r18Type": 0
+      }
+    ]
+  }
 }

@@ -73,7 +73,8 @@
         "光学迷彩使わなくても任務なんて簡単。なぜなら私にはこのブレードがある",
         "喜怒哀楽に欠け冷めているとよく言われるが、それすらもよくわかっていない"
       ],
-      "trust": 11,
+      "voiceR18TextList": [],
+      "trust": 0,
       "trustMaxList": [
         50,
         100,
@@ -95,8 +96,8 @@
           "userUnit": {
             "userUnitId": 444,
             "w2Name": null,
-            "name": "セドナ・アルストナ",
-            "spineId": "chr_0049",
+            "name": "大人ゆきかぜ",
+            "spineId": "chr_0277",
             "evolutionCnt": 0
           }
         },
