@@ -1,0 +1,368 @@
+{
+  "cardList": [
+    {
+      "cardId": "c00002",
+      "type": 3,
+      "w2Name": "【不死覚醒】",
+      "name": "八津　紫",
+      "union": 1,
+      "rarity": 5,
+      "illustrator": "カガミ",
+      "voiceActor": "水瀬沙季",
+      "scheduleId": 1,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": 10001,
+      "isPurcahsed": true,
+      "shop": {
+        "shopId": 10001,
+        "shopType": "scene",
+        "name": "【不死覚醒】八津　紫",
+        "description": "",
+        "paymentType": 0,
+        "price": 20,
+        "periodStart": "2021-03-31 16:00:00",
+        "periodEnd": "2021-04-16 09:59:59",
+        "purchaseLimit": 1,
+        "contents": [
+          {
+            "contentId": "c00002"
+          }
+        ]
+      },
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00002_1_r18",
+          "stillGraphicIdList": [
+            "kar_c00002_1a_r18",
+            "kar_c00002_1b_r18",
+            "kar_c00002_1c_r18",
+            "kar_c00002_1d_r18",
+            "kar_c00002_1e_r18"
+          ]
+        },
+        {
+          "scriptFile": "kar_c00002_2_r18",
+          "stillGraphicIdList": [
+            "kar_c00002_2a_r18",
+            "kar_c00002_2b_r18",
+            "kar_c00002_2c_r18",
+            "kar_c00002_2d_r18",
+            "kar_c00002_2e_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00003",
+      "type": 3,
+      "w2Name": "【おてんば対魔忍】",
+      "name": "井河　さくら",
+      "union": 1,
+      "rarity": 5,
+      "illustrator": "カガミ",
+      "voiceActor": "黒岩心々",
+      "scheduleId": 2,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": 10002,
+      "isPurcahsed": true,
+      "shop": {
+        "shopId": 10002,
+        "shopType": "scene",
+        "name": "【おてんば対魔忍】井河　さくら",
+        "description": "",
+        "paymentType": 0,
+        "price": 20,
+        "periodStart": "2021-03-31 16:00:00",
+        "periodEnd": "2021-04-16 09:59:59",
+        "purchaseLimit": 1,
+        "contents": [
+          {
+            "contentId": "c00003"
+          }
+        ]
+      },
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00003_1_r18",
+          "stillGraphicIdList": [
+            "kar_c00003_1a_r18",
+            "kar_c00003_1b_r18",
+            "kar_c00003_1c_r18",
+            "kar_c00003_1d_r18",
+            "kar_c00003_1e_r18"
+          ]
+        },
+        {
+          "scriptFile": "kar_c00003_2_r18",
+          "stillGraphicIdList": [
+            "kar_c00003_2a_r18",
+            "kar_c00003_2b_r18",
+            "kar_c00003_2c_r18",
+            "kar_c00003_2d_r18",
+            "kar_c00003_2e_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00005",
+      "type": 3,
+      "w2Name": "【斬鬼の対魔忍】",
+      "name": "秋山　凜子",
+      "union": 1,
+      "rarity": 4,
+      "illustrator": "葵渚",
+      "voiceActor": "佐藤遼佳",
+      "scheduleId": 3,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": 10003,
+      "isPurcahsed": true,
+      "shop": {
+        "shopId": 10003,
+        "shopType": "scene",
+        "name": "【斬鬼の対魔忍】秋山　凜子",
+        "description": "",
+        "paymentType": 0,
+        "price": 20,
+        "periodStart": "2021-03-31 16:00:00",
+        "periodEnd": "2021-04-16 09:59:59",
+        "purchaseLimit": 1,
+        "contents": [
+          {
+            "contentId": "c00005"
+          }
+        ]
+      },
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00005_1_r18",
+          "stillGraphicIdList": [
+            "kar_c00005_1a_r18",
+            "kar_c00005_1b_r18",
+            "kar_c00005_1c_r18",
+            "kar_c00005_1d_r18",
+            "kar_c00005_1e_r18"
+          ]
+        },
+        {
+          "scriptFile": "kar_c00005_2_r18",
+          "stillGraphicIdList": [
+            "kar_c00005_2a_r18",
+            "kar_c00005_2b_r18",
+            "kar_c00005_2c_r18",
+            "kar_c00005_2d_r18",
+            "kar_c00005_2e_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00006",
+      "type": 3,
+      "w2Name": null,
+      "name": "東雲　音亜",
+      "union": 1,
+      "rarity": 3,
+      "illustrator": "カガミ",
+      "voiceActor": "鈴音華月",
+      "scheduleId": 4,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": 10004,
+      "isPurcahsed": true,
+      "shop": {
+        "shopId": 10004,
+        "shopType": "scene",
+        "name": "東雲　音亜",
+        "description": "",
+        "paymentType": 0,
+        "price": 10,
+        "periodStart": "2021-03-31 16:00:00",
+        "periodEnd": "2021-04-16 09:59:59",
+        "purchaseLimit": 1,
+        "contents": [
+          {
+            "contentId": "c00006"
+          }
+        ]
+      },
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00006_r18",
+          "stillGraphicIdList": [
+            "kar_c00006a_r18",
+            "kar_c00006b_r18",
+            "kar_c00006c_r18",
+            "kar_c00006d_r18",
+            "kar_c00006e_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00007",
+      "type": 3,
+      "w2Name": null,
+      "name": "葛　黒百合",
+      "union": 1,
+      "rarity": 2,
+      "illustrator": "カガミ",
+      "voiceActor": "鈴音華月",
+      "scheduleId": 5,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": 10005,
+      "isPurcahsed": true,
+      "shop": {
+        "shopId": 10005,
+        "shopType": "scene",
+        "name": "葛　黒百合",
+        "description": "",
+        "paymentType": 0,
+        "price": 10,
+        "periodStart": "2021-03-31 16:00:00",
+        "periodEnd": "2021-04-16 09:59:59",
+        "purchaseLimit": 1,
+        "contents": [
+          {
+            "contentId": "c00007"
+          }
+        ]
+      },
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00007_r18",
+          "stillGraphicIdList": [
+            "kar_c00007a_r18",
+            "kar_c00007b_r18",
+            "kar_c00007c_r18",
+            "kar_c00007d_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00009",
+      "type": 3,
+      "w2Name": null,
+      "name": "峰麻　碧",
+      "union": 1,
+      "rarity": 2,
+      "illustrator": "カガミ",
+      "voiceActor": "加乃みるく",
+      "scheduleId": 6,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": 10006,
+      "isPurcahsed": true,
+      "shop": {
+        "shopId": 10006,
+        "shopType": "scene",
+        "name": "峰麻　碧",
+        "description": "",
+        "paymentType": 0,
+        "price": 10,
+        "periodStart": "2021-03-31 16:00:00",
+        "periodEnd": "2021-04-16 09:59:59",
+        "purchaseLimit": 1,
+        "contents": [
+          {
+            "contentId": "c00009"
+          }
+        ]
+      },
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00009_r18",
+          "stillGraphicIdList": [
+            "kar_c00009a_r18",
+            "kar_c00009b_r18",
+            "kar_c00009c_r18",
+            "kar_c00009d_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00042",
+      "type": 3,
+      "w2Name": null,
+      "name": "井河　さくら",
+      "union": 1,
+      "rarity": 2,
+      "illustrator": "カガミ",
+      "voiceActor": "黒岩心々",
+      "scheduleId": 7,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": null,
+      "isPurcahsed": true,
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00042_r18",
+          "stillGraphicIdList": [
+            "kar_c00042a_r18",
+            "kar_c00042b_r18",
+            "kar_c00042c_r18",
+            "kar_c00042d_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00092",
+      "type": 3,
+      "w2Name": null,
+      "name": "イングリッド",
+      "union": 3,
+      "rarity": 2,
+      "illustrator": "カガミ",
+      "voiceActor": "榊木春乃",
+      "scheduleId": 8,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": null,
+      "isPurcahsed": true,
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00092_r18",
+          "stillGraphicIdList": [
+            "kar_c00092a_r18",
+            "kar_c00092b_r18",
+            "kar_c00092c_r18",
+            "kar_c00092d_r18"
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": "c00139",
+      "type": 3,
+      "w2Name": null,
+      "name": "甲河　アスカ",
+      "union": 2,
+      "rarity": 2,
+      "illustrator": "葵渚",
+      "voiceActor": "手塚りょうこ",
+      "scheduleId": 9,
+      "periodStart": "2021-03-31 16:00:00",
+      "periodEnd": "2099-12-01 13:00:00",
+      "shopId": null,
+      "isPurcahsed": true,
+      "sceneList": [
+        {
+          "scriptFile": "kar_c00139_r18",
+          "stillGraphicIdList": [
+            "kar_c00139a_r18",
+            "kar_c00139b_r18",
+            "kar_c00139c_r18",
+            "kar_c00139d_r18"
+          ]
+        }
+      ]
+    }
+  ]
+}

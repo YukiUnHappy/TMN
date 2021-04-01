@@ -9,17 +9,17 @@ var errorCallbackMethod;
 var cancelCallbackMethod;
 
 function requestJson(co, scm, ecm, url, callbackId, parameters) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
-    
+
     // リクエストパラメータの連想配列化
     var requestParams = {};
     parameters.forEach(function(value) {
         requestParams[value[0]] = value[1];
     });
-    
+
     // ユーザーエージェント付与
     requestParams.deviceInfo = navigator.userAgent;
 
@@ -31,20 +31,20 @@ function requestJson(co, scm, ecm, url, callbackId, parameters) {
 }
 
 function requestJson2(co, scm, ecm, url, callbackId, parameters) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
-    
+
     // リクエストパラメータの連想配列化
     var requestParams = {};
     parameters.forEach(function(value) {
         requestParams[value[0]] = value[1];
     });
-    
+
     // ユーザーエージェント付与
     requestParams.deviceInfo = navigator.userAgent;
-    
+
     // 上位フレームへメソッドコール
     var message = {
             url: url,
@@ -52,35 +52,35 @@ function requestJson2(co, scm, ecm, url, callbackId, parameters) {
             callbackId: callbackId,
             apiType: "makeRequest"
     }
-    
+
     window.parent.postMessage(message, "*");
 }
 
 function requestPayment(co, scm, ecm, ccm, callbackId, itemData) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
     cancelCallbackMethod = ccm;
-    
+
     // リクエストパラメータの設定
     var itemParams = {};
     itemData.forEach(function(value) {
         itemParams[value[0]] = value[1];
     });
-    
+
     // 上位フレームへメソッドコール
     var message = {
             itemParams: itemParams,
             callbackId: callbackId,
             apiType: "payment"
     }
-    
+
     window.parent.postMessage(message, "*");
 }
 
 function requestPerson(co, scm, ecm, callbackId) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
@@ -94,49 +94,49 @@ function requestPerson(co, scm, ecm, callbackId) {
 }
 
 function requestPerson2(co, scm, ecm, callbackId) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
-    
+
     // 上位フレームへメソッドコール
     var message = {
             callbackId: callbackId,
             apiType: "person"
     }
-    
+
     window.parent.postMessage(message, "*");
 }
 
 function requestInspectionCreate(co, scm, ecm, callbackId, text) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
-    
+
     // 上位フレームへメソッドコール
     var message = {
             callbackId: callbackId,
             text: text,
             apiType: "inspectionCreate"
     }
-    
+
     window.parent.postMessage(message, "*");
 }
 
 function requestInspectionFetch(co, scm, ecm, callbackId, textId) {
-    
+
     callbackObject = co;
     successCallbackMethod = scm;
     errorCallbackMethod = ecm;
-    
+
     // 上位フレームへメソッドコール
     var message = {
             callbackId: callbackId,
             textId: textId,
             apiType: "inspectionFetch"
     }
-    
+
     window.parent.postMessage(message, "*");
 }
 
@@ -145,7 +145,7 @@ function receiveMessage(event) {
     var callbackId = event.data.callbackId;
     var status = event.data.status;
     var rc = event.data.rc ? event.data.rc : 200;
-    
+
     var response = {callbackId: callbackId, json: JSON.stringify(json), rc: rc};
     switch (status) {
         case 0:
@@ -169,6 +169,7 @@ function showInputText(co, ok, cancel, defaultText, maxlength, type) {
     $("#input-text-popup").removeClass("profile-input-text-popup");
     $("#input-text-popup").removeClass("rune-myset-input-text-popup");
     $("#input-text-popup").removeClass("deck-name-input-text-popup");
+
     switch (type) {
         case INPUT_TEXT_TYPE_PROFILE:
             $("#input-text-popup").addClass("profile-input-text-popup");
@@ -180,23 +181,23 @@ function showInputText(co, ok, cancel, defaultText, maxlength, type) {
             $("#input-text-popup").addClass("deck-name-input-text-popup");
             break;
     }
-    
+
     // 表示
     $("#input-text-popup-base").show();
     $("#input-text-popup").show();
     $("#input-text-popup").removeClass("inactive");
     $("#input-text-popup").addClass("active");
-    
+
     $("#popup-input-text").attr("maxlength", maxlength);
     $("#popup-input-text").val(defaultText);
-    
+
     // 文字数表示の更新
     updateTextCount(maxlength);
     $("#popup-input-text").keyup(function(){
     	console.log("keyup");
         updateTextCount(maxlength);
     });
-    
+
     // 各ボタンのコールバック
     $("#popup-ok-btn").click(function(){
         hideInputText();

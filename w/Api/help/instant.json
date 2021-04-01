@@ -16,6 +16,14 @@
         "detail": null,
         "graphicId": "instant_help_100_2",
         "r18Type": 2
+      },
+      {
+        "helpInstantId": 100003,
+        "helpCategory": 100,
+        "title": "前世の記憶について",
+        "detail": null,
+        "graphicId": "instant_help_100_3",
+        "r18Type": 2
       }
     ],
     "110": [
